@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulare</title>
+</head>
+<body>
+    <img src="imagini/furniture.jpeg" alt="">
+
+    <hr>
+    <form action="fisierul_gerenare.php" method="get">
+        <select>
+            <option value="varsta">varsta</option>
+            <option value="pasiuni">pasiuni</option>
+            <option value="culori_preferate">culori preferate</option>
+        </select>
+        <br>
+        <input type="password" name="" id="" placeholder="Introdu adresa ta de e-mail" required>
+        <br>
+        <input type="email" name="" id="" required>
+
+
+        <br>
+        <label for="numele-tau">Numele tau: </label>
+        <input type="text" id="numele-tau" required>
+        <br>
+        <label for="bmw">bmw</label>
+        <input type="radio" name="car" id="bmw" value="bmw">
+        <br>
+        <label for="audi">audi</label>
+        <input type="radio" name="car" id="audi" value="audi">
+        <br>
+        <label for="dacia">dacia</label>
+        <input type="radio" name="car" id="dacia" value="dacia">
+        <br>
+        <br>
+        <label for="bmw">bmw</label>
+        <input type="checkbox" name="preferinta" id="car1">
+        <br>
+        <label for="audi">audi</label>
+        <input type="checkbox" name="preferinta" id="car2">
+        <br>
+        <label for="dacia">dacia</label>
+        <input type="checkbox" name="preferinta" id="car3">
+        <br>
+        <br>
+        <input type="reset" value="Reseteaza formularul">
+        <input type="submit" value="Trimite formularul">
+        <button type="submit">Trimite</button>
+    </form>
+</body>
+</html>
