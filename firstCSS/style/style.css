@@ -1,0 +1,46 @@
+/* tag,calasa,id-ul {stilul css} */
+body {
+  /* atribut: valoare; */
+  background: #da1a08;
+  /* background: rgb(218, 26, 8);
+  background: rgba(218, 26, 8, 0.5);
+  background: rgba(#da1a08, 0.5);
+  background: red; */
+}
+
+.container {
+  background: lime;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.status1,
+.status2,
+.status3 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+.status1 {
+  background: orange;
+  /* right: 20px; */
+  top: 100px;
+  z-index: 2;
+}
+
+.status2 {
+  background: red;
+  /* right: 20px; */
+  top: 110px;
+  left: 20px;
+  z-index: 1;
+}
+
+.status3 {
+  background: blue;
+  /* right: 20px; */
+  top: 90px;
+  left: 30px;
+}
