@@ -1,0 +1,34 @@
+.container {
+  width: 400px;
+  background: deepskyblue;
+  padding: 50px;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: stretch;
+  /* justify-content: space-between; */
+}
+
+.ex1,
+.ex2,
+.ex3,
+.ex4 {
+  padding: 15px;
+}
+
+
+.ex1 {
+  background: red;
+}
+
+.ex2 {
+  background: lime;
+  flex: 1;
+}
+
+.ex3 {
+  background: gold;
+}
+
+.ex4 {
+  background: deeppink;
+}
