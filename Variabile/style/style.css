@@ -1,0 +1,52 @@
+:root {
+    /* --nume_variabila: valoare; */
+    --color-red: red;
+    --color-yellow: yellow;
+    --color-white: white;
+}
+
+/* css pt liste in documentul "5. Curs 5 17.05" */
+
+.table {
+    width: 400px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+.row:nth-child(odd) {
+    background: darkgray;
+}
+
+.row:first-child {
+    background: black;
+    color: white;
+}
+
+.row:first-child .cell {
+    border-bottom: 1px solid black;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.cell {
+    padding: 10px;
+    border-right: 1px solid gray;
+    cursor: pointer;
+}
+
+.cell:last-child{
+    border-right: none;
+}
+.cell:hover{
+    background: dimgrey;
+}
+.grow{
+    flex:1;
+}
+
