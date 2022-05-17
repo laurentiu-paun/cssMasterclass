@@ -1,0 +1,93 @@
+.level1 .item {
+    width: 100px;
+    height: 15px;
+    padding: 5px 0px;
+    background: red;
+    color: white;
+    position: relative;
+    text-align: center;
+  }
+  
+  .level1 .item:hover {
+    background: black;
+  }
+
+  .level1 .item .level2 {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  
+  .level1 .item:hover .level2 {
+    display: flex;
+    left: 100px;
+  }
+
+  .level2 .item {
+    background: blue;
+    position: relative;
+  }
+
+.level2 .item .level3 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.level2 .item:hover .level3 {
+  display: block;
+  top: 25px;
+}
+
+.level3 .item {
+  background: lime;
+  position: relative;
+}
+
+.level3 .item:hover {
+  background: red;
+}
+
+.level3 .item .level4 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.level3 .item:hover .level4 {
+  display: flex;
+  left: 100px;  
+}
+
+.level4 .item {
+  background: magenta;
+  position: relative;
+}
+
+.level4 .item:hover {
+  background: grey;
+}
+
+.level4 .item .level5 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.level4 .item:hover .level5 {
+  display: block;
+  top: 25px;  
+}
+
+.level5 .item {
+  background: orange;
+  position: relative;
+}
+
+.level5 .item:hover {
+  background: blue;
+}
