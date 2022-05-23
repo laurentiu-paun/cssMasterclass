@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'IBM Plex Sans', sans-serif; }
+
+.color {
+  display: flex; }
+  .color-item {
+    width: 128px;
+    height: 256px;
+    margin-right: 40px;
+    border-radius: 8px;
+    position: relative; }
+    .color-item:last-child {
+      margin-right: 0; }
+    .color-item:after {
+      background: #151515;
+      position: absolute;
+      height: 64px;
+      width: 100%;
+      bottom: 0;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 0 8px 8px;
+      letter-spacing: 0.44px; }
+    .color-item:nth-child(1) {
+      background: #ECEFF1; }
+      .color-item:nth-child(1):after {
+        content: "#ECEFF1"; }
+    .color-item:nth-child(2) {
+      background: #CFD8DC; }
+      .color-item:nth-child(2):after {
+        content: "#CFD8DC"; }
+    .color-item:nth-child(3) {
+      background: #B0BEC5; }
+      .color-item:nth-child(3):after {
+        content: "#B0BEC5"; }
+    .color-item:nth-child(4) {
+      background: #90A4AE; }
+      .color-item:nth-child(4):after {
+        content: "#90A4AE"; }
+    .color-item:nth-child(5) {
+      background: #78909C; }
+      .color-item:nth-child(5):after {
+        content: "#78909C"; }
+    .color-item:nth-child(6) {
+      background: #607D8B; }
+      .color-item:nth-child(6):after {
+        content: "#607D8B"; }
+
+/*# sourceMappingURL=style.css.map */
