@@ -16,34 +16,32 @@
       display: none;
       position: absolute;
       top: 0;
-      left: 0;
+      left: 100px;
   }
   
   .level1 .item:hover .level2 {
     display: flex;
-    left: 100px;
   }
 
   .level2 .item {
     background: blue;
-    position: relative;
+    /* desi inainte era position: absolute, in momentul in care fac copilul position: absolute, parintele devine automat position: relative */
+    /* position: relative; */
   }
 
 .level2 .item .level3 {
     display: none;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 25px;
 }
 
 .level2 .item:hover .level3 {
   display: block;
-  top: 25px;
 }
 
 .level3 .item {
   background: lime;
-  position: relative;
+  /* position: relative; */
 }
 
 .level3 .item:hover {
@@ -54,17 +52,16 @@
     display: none;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 100px;
 }
 
 .level3 .item:hover .level4 {
   display: flex;
-  left: 100px;  
 }
 
 .level4 .item {
   background: magenta;
-  position: relative;
+  /* position: relative; */
 }
 
 .level4 .item:hover {
@@ -74,18 +71,16 @@
 .level4 .item .level5 {
     display: none;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 25px;
 }
 
 .level4 .item:hover .level5 {
   display: block;
-  top: 25px;  
 }
 
 .level5 .item {
   background: orange;
-  position: relative;
+  /* position: relative; */
 }
 
 .level5 .item:hover {
