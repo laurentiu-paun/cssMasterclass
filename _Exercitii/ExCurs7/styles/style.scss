@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+$labelBackground: #151515;
+$textColor: #FFFFFF;
+$colorPalette: (
+        "1": #ECEFF1,
+        "2": #CFD8DC,
+        "3": #B0BEC5,
+        "4": #90A4AE,
+        "5": #78909C,
+        "6": #607D8B,
+);
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-container {
+  display: flex;
+  .color-item {
+    position: relative;
+    width: 128px;
+    height: 256px;
+    border-radius: 8px;
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:after {
+      position: absolute;
+      display: flex;
+      bottom: 0;
+      background: $labelBackground;
+      color: $textColor;
+      height: 64px;
+      size: 16px;
+      letter-spacing: 0.44px;
+      line-height: 24px;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border-radius: 0 0 8px 8px;
+    }
+
+    @each $id, $hex in $colorPalette {
+      &:nth-child(#{$id}) {
+        background: $hex;
+        &:after {
+          content: "#{$hex}";
+        }
+      }
+    }
+  }
+}
