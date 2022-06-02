@@ -6,13 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="023bef0a-7256-4799-9326-8b9bf2bf10e4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Curs8/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Curs8/styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Curs8/styles/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Curs8/styles/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Curs8/styles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Curs8/styles/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_Exercitii/ExCurs8/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_Exercitii/ExCurs8/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_Exercitii/ExCurs8/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/_Exercitii/ExCurs8/styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_Exercitii/ExCurs8/styles/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/_Exercitii/ExCurs8/styles/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_Exercitii/ExCurs8/styles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_Exercitii/ExCurs8/styles/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +61,7 @@
       <updated>1653932464008</updated>
       <workItem from="1653932465492" duration="7199000" />
       <workItem from="1653986681276" duration="19710000" />
-      <workItem from="1654137631836" duration="20387000" />
+      <workItem from="1654137631836" duration="22196000" />
     </task>
     <servers />
   </component>
