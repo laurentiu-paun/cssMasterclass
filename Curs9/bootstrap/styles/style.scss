@@ -1,0 +1,72 @@
+// import google fonts / icons
+// declarare variabile
+// declarare mixinuri
+
+@mixin onMobile {
+  @media (max-width: 700px) {
+    @content;
+  }
+}
+
+@mixin numeMixin() {
+  background: red;
+  border: 1px solid black;
+  font-size: 14px;
+  font-weight: 700;
+  // restul de css
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  @include onMobile() {
+    background: black;
+  }
+}
+
+
+.red {
+  background: deeppink;
+  @include numeMixin;
+  @include onMobile() {
+    background: red;
+  }
+}
+
+.green {
+  background: lightgreen;
+}
+
+.blue {
+  background: deepskyblue;
+  @include numeMixin;
+}
+
+
+.navbar-nav {
+  .nav-item {
+    a {
+      background: grey;
+      color: black;
+      @include numeMixin;
+
+      &.active {
+        background: red;
+        color: white;
+      }
+    }
+  }
+}
+
+.icons {
+  width: 300px;
+  height: 200px;
+  border: 1px solid red;
+  margin-left: 100px;
+  padding: 50px;
+
+  i {
+    font-size: 65px;
+    color: red;
+  }
+}

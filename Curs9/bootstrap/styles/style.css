@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0; }
+  @media (max-width: 700px) {
+    body {
+      background: black; } }
+
+.red {
+  background: deeppink;
+  background: red;
+  border: 1px solid black;
+  font-size: 14px;
+  font-weight: 700; }
+  @media (max-width: 700px) {
+    .red {
+      background: red; } }
+
+.green {
+  background: lightgreen; }
+
+.blue {
+  background: deepskyblue;
+  background: red;
+  border: 1px solid black;
+  font-size: 14px;
+  font-weight: 700; }
+
+.navbar-nav .nav-item a {
+  background: grey;
+  color: black;
+  background: red;
+  border: 1px solid black;
+  font-size: 14px;
+  font-weight: 700; }
+  .navbar-nav .nav-item a.active {
+    background: red;
+    color: white; }
+
+.icons {
+  width: 300px;
+  height: 200px;
+  border: 1px solid red;
+  margin-left: 100px;
+  padding: 50px; }
+  .icons i {
+    font-size: 65px;
+    color: red; }
+
+/*# sourceMappingURL=style.css.map */
