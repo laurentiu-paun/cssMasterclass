@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+.container {
+  width: 800px;
+  border: 1px solid #E2E2E2;
+  border-radius: 8px; }
+  .container .header {
+    padding: 6px 24px;
+    display: flex;
+    align-items: center; }
+    .container .header .image {
+      position: relative;
+      height: 60px; }
+      .container .header .image:before {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        content: "";
+        background: lime;
+        border: 1px solid white;
+        position: absolute;
+        top: 4px;
+        left: 4px; }
+      .container .header .image:after {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        content: "";
+        background: red;
+        border: 1px solid white;
+        position: absolute;
+        bottom: 4px;
+        left: 4px; }
+      .container .header .image img {
+        width: 60px;
+        height: 60px;
+        border-radius: 6px;
+        margin-right: 16px; }
+    .container .header .person {
+      flex: 1; }
+      .container .header .person h1 {
+        margin: 0;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 32px;
+        color: #0065FF; }
+      .container .header .person .info span {
+        font-size: 14px;
+        line-height: 20px;
+        color: #202024;
+        margin-right: 12px; }
+        .container .header .person .info span:last-child {
+          margin-right: 0; }
+    .container .header .price {
+      text-align: right;
+      display: flex;
+      flex-direction: column; }
+      .container .header .price h2 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+        color: #786DCF; }
+      .container .header .price span {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #202024; }
+      .container .header .price strong {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #202024; }
+  .container .description {
+    display: flex;
+    align-items: center;
+    background: #E2E2E2;
+    padding: 16px 24px; }
+    .container .description span {
+      flex: 1;
+      font-size: 14px;
+      line-height: 20px;
+      color: #202024;
+      margin-right: 24px; }
+  .container .details {
+    display: flex;
+    border-bottom: 1px solid #E2E2E2; }
+    .container .details-item {
+      padding: 16px 24px;
+      border-right: 1px solid #E2E2E2;
+      flex: 1 1 0px;
+      display: flex;
+      flex-direction: column; }
+      .container .details-item:last-child {
+        border-right: none; }
+      .container .details-item h3 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #202024;
+        margin: 0;
+        padding-bottom: 6px; }
+      .container .details-item ul {
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        .container .details-item ul li {
+          display: flex; }
+      .container .details-item strong {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        color: #786DCF;
+        margin-bottom: 8px; }
+      .container .details-item span {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #202024; }
+        .container .details-item span:first-child {
+          flex: 1; }
+        .container .details-item span.bold {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          color: #0065FF; }
+  .container .footer {
+    background: #E2E2E2;
+    border-radius: 0px 0px 8px 8px; }
+
+button {
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  padding: 6px 16px;
+  margin-right: 6px; }
+  button:last-child {
+    margin-right: 0; }
+  button.purple {
+    background: #786DCF;
+    border: 1px solid #786DCF;
+    color: white; }
+  button.big {
+    padding: 8px 32px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.3px; }
+
+/*# sourceMappingURL=style.css.map */

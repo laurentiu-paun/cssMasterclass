@@ -19,11 +19,7 @@ body {
   background: lightgreen; }
 
 .blue {
-  background: deepskyblue;
-  background: red;
-  border: 1px solid black;
-  font-size: 14px;
-  font-weight: 700; }
+  background: deepskyblue; }
 
 .navbar-nav .nav-item a {
   background: grey;
