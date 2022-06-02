@@ -37,6 +37,7 @@ body {
         &:before {
           content: '/';
           margin-right: 4px;
+          color: #5B5C60;
         }
 
         &:first-child {
@@ -97,7 +98,7 @@ body {
           border-radius: 50%;
           text-align: center;
           line-height: 24px;
-          text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
+          text-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
           &.yellow{
             background: #FFCB45;
           }

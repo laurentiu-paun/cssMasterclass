@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="023bef0a-7256-4799-9326-8b9bf2bf10e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Curs9/bootstrap/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Curs9/bootstrap/styles/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Curs9/bootstrap/styles/style.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Curs9/bootstrap/styles/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Curs8/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Curs8/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Curs8/styles/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Curs8/styles/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Curs8/styles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Curs8/styles/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_Exercitii/ExCurs8/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_Exercitii/ExCurs8/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_Exercitii/ExCurs8/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/_Exercitii/ExCurs8/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_Exercitii/ExCurs8/styles/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/_Exercitii/ExCurs8/styles/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_Exercitii/ExCurs8/styles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_Exercitii/ExCurs8/styles/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,19 +40,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/laurentiupaun/Documents/GitHub/cssMasterclass",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.editor",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/laurentiupaun/Documents/GitHub/cssMasterclass&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Curs9/bootstrap" />
@@ -65,6 +68,7 @@
       <updated>1653932464008</updated>
       <workItem from="1653932465492" duration="7199000" />
       <workItem from="1653986681276" duration="19710000" />
+      <workItem from="1654137631836" duration="20387000" />
     </task>
     <servers />
   </component>

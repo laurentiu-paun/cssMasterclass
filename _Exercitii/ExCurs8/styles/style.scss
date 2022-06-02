@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
 
 $textColor: #5B5C60;
+$linkColor: #005AFE;
+$borderColor: #ECECEC;
+$iconTextColor: #FFFFFF;
+$strongColor: #D22630;
+$progressBackgroud: #EEF0F3;
+$progressBar: #D22630;
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
@@ -15,17 +21,169 @@ body {
 
 .container {
   width: 600px;
-  height: 474px;
   border: 1px solid #ECECEC;
   border-radius: 8px;
+  color: $textColor;
 
   .header {
-    margin: 24px 24px 40px;
+    margin: 24px 24px 40px;//De ce cand pun padding nu mai ia si clasa de la table???
 
     .breadcrumbs {
-      font-size: 12px;
+      margin-bottom: 6px;
+
+      span {
+        font-size: 12px;
+        line-height: 150%;
+        cursor: pointer;
+
+        &:hover {
+          color: $linkColor;
+        }
+
+        &:after {
+          margin-left: 5px;
+          content: "/";
+          color: $textColor;
+        }
+
+        &:first-child {
+          color: $linkColor;
+        }
+
+        &:last-child:after {
+          margin-left: 0;
+          content: "";
+        }
+      }
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 120%;
+    }
+
+    .counter {
+      font-size: 14px;
       line-height: 150%;
-      color: $textColor;
+      color: $linkColor;
+    }
+  }
+
+  .table {
+    margin: 0 24px 24px;
+    &-row {
+      border: 1px solid $borderColor;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .nr {
+        width: 30px;
+        span {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 150%;
+          color: $iconTextColor;
+          text-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &#purple {
+            background: #4C3FB1;
+          }
+          &#yellow {
+            background: #FFCB45;
+          }
+          &#green {
+            background: #7FBA02;
+          }
+          &#blue {
+            background: #38CCF6;
+          }
+        }
+      }
+
+      .header1 {
+        width: 52px;
+        display: block;
+        span {
+          font-size: 14px;
+          line-height: 150%;
+        }
+        strong {
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 150%;
+          color: $strongColor;
+        }
+      }
+
+      .header2 {
+        width: 46px;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: right;
+      }
+
+
+      .header3 {
+        flex: 1;
+        font-size: 14px;
+        line-height: 150%;
+      }
+
+      .status {
+        width: 48px;
+
+        .progress {
+          background: $progressBackgroud;
+          border-radius: 8px;
+          width: 100%;
+          height: 7px;
+          .bar {
+            width: 11px;
+            height: 100%;
+            background: $progressBar;
+            border-radius: 8px;
+            &.green {
+              background: #7FBA02;
+              width: 36px;
+            }
+            &.yellow {
+              background: #FFCB45;
+              width: 26px;
+            }
+          }
+        }
+
+        span {
+          font-size: 10px;
+          line-height: 120%;
+        }
+      }
+
+      .nr, .header1, .header2, .header3 {
+        padding-right: 49px;
+      }
+
+      &.tHeader {
+        border: none;
+        font-weight: 600;
+        line-height: 150%;
+        .headerItem {
+          font-size: 12px;//pun o noua clasa???
+        }
+      }
     }
   }
 }
