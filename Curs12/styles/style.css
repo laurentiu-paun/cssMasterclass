@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 14px; }
+
+.table {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 4px; }
+  .table .tr {
+    display: flex;
+    align-items: center; }
+    .table .tr div {
+      flex: 1 1 0px;
+      border: 1px solid black; }
+      .table .tr div:nth-child(2) {
+        background: red; }
+  .table .th {
+    font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */
