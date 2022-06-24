@@ -24,16 +24,19 @@ body {
 
 .color-container {
   display: flex;
+  column-gap: 40px;
+  width: 700px;
+
   .color-item {
     position: relative;
     width: 128px;
     height: 256px;
     border-radius: 8px;
-    margin-right: 40px;
-
-    &:last-child {
-      margin-right: 0;
-    }
+    //margin-right: 40px;
+    //
+    //&:last-child {
+    //  margin-right: 0;
+    //}
 
     &:after {
       position: absolute;
@@ -58,6 +61,14 @@ body {
           content: "#{$hex}";
         }
       }
+    }
+
+    &.fg {
+      flex: 0 1 auto;//default
+    }
+
+    &.fs {
+      flex-shrink: 1;//default
     }
   }
 }

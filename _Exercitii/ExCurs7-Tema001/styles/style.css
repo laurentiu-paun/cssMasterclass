@@ -1,61 +1,82 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
 body {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   margin: 0;
   padding: 0;
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
 .color-container {
-  display: flex; }
-  .color-container .color-item {
-    position: relative;
-    width: 128px;
-    height: 256px;
-    border-radius: 8px;
-    margin-right: 40px; }
-    .color-container .color-item:last-child {
-      margin-right: 0; }
-    .color-container .color-item:after {
-      position: absolute;
-      display: flex;
-      bottom: 0;
-      background: #151515;
-      color: #FFFFFF;
-      height: 64px;
-      size: 16px;
-      letter-spacing: 0.44px;
-      line-height: 24px;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      border-radius: 0 0 8px 8px; }
-    .color-container .color-item:nth-child(1) {
-      background: #ECEFF1; }
-      .color-container .color-item:nth-child(1):after {
-        content: "#ECEFF1"; }
-    .color-container .color-item:nth-child(2) {
-      background: #CFD8DC; }
-      .color-container .color-item:nth-child(2):after {
-        content: "#CFD8DC"; }
-    .color-container .color-item:nth-child(3) {
-      background: #B0BEC5; }
-      .color-container .color-item:nth-child(3):after {
-        content: "#B0BEC5"; }
-    .color-container .color-item:nth-child(4) {
-      background: #90A4AE; }
-      .color-container .color-item:nth-child(4):after {
-        content: "#90A4AE"; }
-    .color-container .color-item:nth-child(5) {
-      background: #78909C; }
-      .color-container .color-item:nth-child(5):after {
-        content: "#78909C"; }
-    .color-container .color-item:nth-child(6) {
-      background: #607D8B; }
-      .color-container .color-item:nth-child(6):after {
-        content: "#607D8B"; }
+  display: flex;
+  column-gap: 40px;
+  width: 700px;
+}
+.color-container .color-item {
+  position: relative;
+  width: 128px;
+  height: 256px;
+  border-radius: 8px;
+}
+.color-container .color-item:after {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  background: #151515;
+  color: #FFFFFF;
+  height: 64px;
+  size: 16px;
+  letter-spacing: 0.44px;
+  line-height: 24px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 0 0 8px 8px;
+}
+.color-container .color-item:nth-child(1) {
+  background: #ECEFF1;
+}
+.color-container .color-item:nth-child(1):after {
+  content: "#ECEFF1";
+}
+.color-container .color-item:nth-child(2) {
+  background: #CFD8DC;
+}
+.color-container .color-item:nth-child(2):after {
+  content: "#CFD8DC";
+}
+.color-container .color-item:nth-child(3) {
+  background: #B0BEC5;
+}
+.color-container .color-item:nth-child(3):after {
+  content: "#B0BEC5";
+}
+.color-container .color-item:nth-child(4) {
+  background: #90A4AE;
+}
+.color-container .color-item:nth-child(4):after {
+  content: "#90A4AE";
+}
+.color-container .color-item:nth-child(5) {
+  background: #78909C;
+}
+.color-container .color-item:nth-child(5):after {
+  content: "#78909C";
+}
+.color-container .color-item:nth-child(6) {
+  background: #607D8B;
+}
+.color-container .color-item:nth-child(6):after {
+  content: "#607D8B";
+}
+.color-container .color-item.fg {
+  flex: 0 1 auto;
+}
+.color-container .color-item.fs {
+  flex-shrink: 1;
+}
 
 /*# sourceMappingURL=style.css.map */
