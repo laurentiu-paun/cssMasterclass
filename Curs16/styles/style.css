@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+}
+.table .row {
+  display: flex;
+}
+.table .row.header {
+  background: rgba(128, 128, 128, 0.5);
+  font-weight: bold;
+}
+.table .row .cell {
+  width: 100px;
+  border: 1px solid black;
+}
+
+/*# sourceMappingURL=style.css.map */
