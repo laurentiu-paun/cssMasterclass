@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+$mainBlack:202024;
+$gray: #E2E2E2;
+$green: #0CFF07;
+$red: #FF0000;
+$red2: #DF3859;
+$white: #FFFFFF;
+$blue: #0065FF;
+$purple: #786DCF;
+$fontSize: 14px;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: $mainBlack;
+  font-size: $fontSize;
+}
+
+.container {
+  width: 800px;
+  border: 1px solid $gray;
+  border-radius: 8px;
+  .header {
+    padding: 6px 24px;
+    display: flex;
+    align-items: center;
+    .image {
+      position: relative;
+      height: 60px; //necesar pt a se pozitiona bulinele colorate (verde, rosu) cum trebuie
+      img {
+        height: 60px;
+        width: 60px;
+        border-radius: 6px;
+        margin-right: 16px;
+      }
+      &:before {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        top: 4px;
+        left: 4px;
+        background: $green;
+        border: 1px solid $white;
+        border-radius: 50%;
+        content: "";
+      }
+      &:after {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        bottom: 4px;
+        left: 4px;
+        background: $red;
+        border: 1px solid $white;
+        border-radius: 50%;
+        content: "";
+      }
+    }
+    .person {
+      flex: 1 1 auto;
+      h1 {
+        margin: 0;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 32px;
+        color: $blue;
+      }
+      span {
+        line-height: 20px;
+        margin-right: 12px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .price {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      h2 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+        color: $purple;
+      }
+      span {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      strong {
+        line-height: 20px;
+      }
+    }
+  }
+
+  .description {
+    display: flex;
+    background: $gray;
+    padding: 17px 24px;
+    align-items: center;
+    span {
+      flex: 1;//= 1 1 0px -> las flex-basis 0 ca sa nu forteze celelalte elemente sa se stranga
+      line-height: 20px;
+      margin-right: 24px;
+    }
+  }
+
+  .details {
+    display: flex;
+    border-bottom: 1px solid $gray;
+    &Column {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+      padding: 16px 24px;
+      border-right: 1px solid $gray;
+      &:last-child {
+        border-right: 0;
+      }
+      h3 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+        padding-bottom: 6px;
+      }
+      .detailRow {
+        display: flex;
+      }
+      span{
+        &:first-child {
+          flex: 1 1 auto;
+        }
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        &.bold {
+          font-weight: 600;
+          color: $blue;
+        }
+      }
+      strong {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        color: $purple;
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .title {
+    padding: 16px 24px;
+    h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 40px;
+      color: $purple;
+    }
+  }
+  .footer {
+    display: flex;
+    background: $gray;
+    border-radius: 0px 0px 8px 8px;
+    padding: 16px 24px;
+    .logo {
+      margin-right: 24px;
+      img {
+        border-radius: 6px;
+        width: 80px;
+        height: 80px;
+      }
+    }
+    .company {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+      h3 {
+        margin: 0;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    .action {
+
+    }
+    span {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      strong {
+        font-weight: 600;
+        color: $red2;
+      }
+    }
+  }
+}
+
+button {
+  background: $white;
+  border: 1px solid $white;
+  border-radius: 4px;
+  margin-right: 6px;
+  &:last-child {
+    margin-right: 0;
+  }
+  padding: 6px 16px;
+  line-height: 24px;
+
+  &.purple {
+    background: $purple;
+    border: 1px solid $purple;
+    letter-spacing: 0.233333px;
+    color: $white;
+  }
+  &.big {
+    border-radius: 6px;
+    padding: 8px 32px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+  }
+}
