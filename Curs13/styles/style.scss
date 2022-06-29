@@ -1,4 +1,39 @@
-body {
-  margin: 0;
-  padding: 0;
+.input {
+  width: 60px;
+  height: 60px;
+  //border: 3px solid red;
+  input {
+    margin: 0;
+    opacity: 0;//asa fac sa nu se mai vada checkbox-ul, ci doar sa preiau actiunile lui
+    width: 60px;
+    height: 60px;
+    position: absolute;//astfel va permite div-ului ce urmeaza sa primeasca stilizarile sa vina in aceasi pozitie (default e top 0, left 0), avand si aceeasi dimensiune ambele
+    cursor: pointer;
+    & + .checkbox { //daca avem input-ul si urmeaza imediat dupa in html clasa .checkbox, sa faca stilizarile date
+      width: 60px;
+      height: 60px;
+      //background: pink;
+      border-radius: 50%;
+      border: 3px solid grey;
+    }
+    &:checked { //ce stilizare primeste daca input-ul este checked
+      & + .checkbox {
+        //background: green;
+        //border: 3px solid green;
+        border-color: green; // asa schimbam doar culoarea la border
+        display: flex; //asa va veni bulina din before pe mijloc:
+        align-items: center;
+        justify-content: center;
+        &:before {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: green;
+          content: "";
+          position: absolute;
+          pointer-events: none; //asa dezactivez orice actiune de pe un element
+        }
+      }
+    }
+  }
 }

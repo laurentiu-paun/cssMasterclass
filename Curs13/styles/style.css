@@ -1,6 +1,35 @@
-body {
+.input {
+  width: 60px;
+  height: 60px;
+}
+.input input {
   margin: 0;
-  padding: 0;
+  opacity: 0;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  cursor: pointer;
+}
+.input input + .checkbox {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid grey;
+}
+.input input:checked + .checkbox {
+  border-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input input:checked + .checkbox:before {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: green;
+  content: "";
+  position: absolute;
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=style.css.map */
