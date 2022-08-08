@@ -1,0 +1,76 @@
+$breakpoint: 600px;
+$col-grey: #ccc;
+$col-white: #fff;
+
+@mixin headerTable {
+  font-weight: bold;
+  font-size: 16px;
+  color: blue;
+}
+@mixin onMobile {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+@mixin hideOnMobile {
+  @include onMobile {
+    display: none;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba($col-grey, 0.35);
+}
+.table {
+  width: 600px;
+  background: $col-white;
+  @include onMobile {
+    width: 90%;
+  }
+  &-row {
+    display: flex;
+    border: 1px solid $col-grey;
+    border-width: 1px 1px 0 1px;
+    &:last-child {
+      border-bottom: 1px solid $col-grey;
+    }
+    @include onMobile {
+      flex-direction: column;
+      &:nth-child(odd) {
+        background: rgba($col-grey, 0.5);
+      }
+      &:first-child {
+        border-top: 1px solid $col-grey;
+      }
+    }
+    &.header {
+      @include headerTable;
+      @include hideOnMobile;
+    }
+  }
+  &-cell {
+    flex: 1;
+    border: 1px solid $col-grey;
+    border-width: 0 1px 0 0;
+    padding: 8px;
+    &:last-child {
+      border-width: 0;
+    }
+    @include onMobile {
+      border-width: 0;
+      display: flex;
+      align-items: center;
+      &:before {
+        content: attr(data-table);
+        width: 45%;
+        @include headerTable;
+      }
+    }
+  }
+}

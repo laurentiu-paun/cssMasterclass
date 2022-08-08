@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(204, 204, 204, 0.35);
+}
+
+.table {
+  width: 600px;
+  background: #fff;
+}
+@media (max-width: 600px) {
+  .table {
+    width: 90%;
+  }
+}
+.table-row {
+  display: flex;
+  border: 1px solid #ccc;
+  border-width: 1px 1px 0 1px;
+}
+.table-row:last-child {
+  border-bottom: 1px solid #ccc;
+}
+@media (max-width: 600px) {
+  .table-row {
+    flex-direction: column;
+  }
+  .table-row:nth-child(odd) {
+    background: rgba(204, 204, 204, 0.5);
+  }
+  .table-row:first-child {
+    border-top: 1px solid #ccc;
+  }
+}
+.table-row.header {
+  font-weight: bold;
+  font-size: 16px;
+  color: blue;
+}
+@media (max-width: 600px) {
+  .table-row.header {
+    display: none;
+  }
+}
+.table-cell {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-width: 0 1px 0 0;
+  padding: 8px;
+}
+.table-cell:last-child {
+  border-width: 0;
+}
+@media (max-width: 600px) {
+  .table-cell {
+    border-width: 0;
+    display: flex;
+    align-items: center;
+  }
+  .table-cell:before {
+    content: attr(data-table);
+    width: 45%;
+    font-weight: bold;
+    font-size: 16px;
+    color: blue;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
