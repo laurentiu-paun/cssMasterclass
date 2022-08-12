@@ -40,8 +40,11 @@
   left: 100px;
 }
 
-#pinkVerticalRectangle {
+.rectangle {
   background: pink;
+}
+
+#pinkVerticalRectangle {
   height: 250px;
   width: 50px;
   top: 100px;
@@ -56,7 +59,6 @@
 }
 
 #pinkHorizontalRectangle {
-  background: pink;
   height: 50px;
   width: 250px;
   bottom: 20px;
